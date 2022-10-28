@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:knob_widget/src/controller/knob_controller.dart';
 import 'package:knob_widget/src/utils/knob_style.dart';
@@ -43,8 +41,8 @@ class _ControlKnobContainerState extends State<ControlKnobContainer> {
           ),
           IgnorePointer(
             child: Container(
-              width: widget.width,
-              height: widget.height,
+              width: widget.width! + 50,
+              height: widget.height! + 50.0,
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.transparent,
